@@ -1,0 +1,334 @@
+/*FIRST BOX*/
+
+@font-face{
+	font-family: "automotive";
+	src:url("FerroRosso.ttf");
+}
+
+@-webkit-keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden; 
+    font-size: 30pt;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1{
+	font-family: "automotive";
+}
+
+nav{
+	background-color: rgb(50,50,50);
+	position: fixed;
+	font-size: 1em;
+	float:left;
+	width: 100%;
+	height: 150px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+nav ul li{
+	color: white;
+	display: inline-block;
+	text-align:center;
+	height: 100%;
+	padding:50px;
+}
+
+li.hov:hover{
+	background-color: rgb(200,0,0);
+}
+
+nav ul li img.ver-allign{
+	vertical-align: middle;
+	height: 100%;
+}
+
+
+nav ul li.center{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+[class*="col-"]{
+	float: left;
+    padding: 15px;
+    height: inherit;
+}
+
+/*SECOND BOX*/
+
+div.intro{
+	background-color: rgb(128,0,0);
+	color: white;
+	padding: 10%;
+}
+
+div img.content{
+	float: right;
+	height: 800px;
+	width: auto;
+	vertical-align: middle;
+}
+
+div.content{
+	display: inline-block;
+	font-size: 30pt;
+}
+
+div h1.content{
+	font-size: 2em;
+	margin: 0;
+}
+
+div p.intro-par{
+	font-size:1em;
+}
+
+div p.intro-par a{
+	text-decoration: none;
+	color: yellow;
+}
+
+div p.intro-par a:hover{
+	color: blue;
+}
+
+/*THIRD BOX*/
+
+div.intro1 div.row{
+	height: 500px;
+}
+
+div.parallax{
+	height: 1000px;
+	padding-top: 200px;
+	font-family: "automotive";
+	font-size:100px;
+	color: white;
+	text-align: center;
+
+	background-image: url("a.jpg");	
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	/*background-size: contain;*/
+	background-repeat: no-repeat;
+}
+
+/*FOURTH BOX*/
+div.intro2{
+	background-color: rgb(128,0,0);
+	color: white;
+	padding: 5%;
+}
+
+.superm{
+	width: 100%;
+}
+
+#button-one{
+	background-color: rgb(128,0,0);
+	color: white;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50px;
+	border-width: 4px;
+	font-size: 20pt;
+}
+
+/*FIFTH BOX*/
+div.intro3{
+	background-color: rgb(10,10,10);
+	color: white;
+	padding: 5%;
+}
+
+#button-two{
+	background-color: transparent;
+	color: white;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50px;
+	border-width: 4px;
+	font-size: 20pt;
+}
+
+/*EIGHT BOX*/
+div.intro4{
+	background-color: white;
+	color: black;
+	padding-top: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.center-content{
+	width: 100%;
+	text-align: center;
+}
+
+img.img-intro4{
+	width: 100%;
+	display: inline-block;
+}
+
+.intro4-setting{
+	float: none; 
+	display: inline-block;
+}
+
+.par-ach{
+	font-family: "automotive";
+	font-size: 40pt;
+	margin: 0;
+}
+
+/*NINTH BOX*/
+div.slide-show{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 1000px;
+}
+
+div.slide-show div.row{
+	width: inherit;
+}
+
+div.padd{
+	margin-top: 0px;	
+	height: 500px;
+}
+.prev{
+	float: left;
+	display: inline-block;	
+	background-color:black;
+	color: white;
+	width:80px;
+	text-align: center;
+}
+
+a.prev:hover{
+	background-color: rgb(100,100,100);
+}
+
+a.prev:active{
+	background-color: rgb(60,60,60);
+}
+
+.next{
+	float: right;
+	display: inline-block;
+	background-color:black;
+	color: white;
+	width:80px;
+	text-align: center;
+}
+
+a.next:hover{
+	background-color: rgb(100,100,100);
+}
+
+a.next:active{
+	background-color: rgb(60,60,60);
+}
+
+div.img-ss{
+	background-image: url("b.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+	background-size: cover;
+	font-size: 50pt;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@media (min-width: 2300px){
+	.col-05 {
+		width: 4%;
+	}
+	.col-1{
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+	img.content{
+		width: 100%;
+	}
+}
+
+@media (max-width: 2300px){
+	.col-sm{
+		width: 100%;
+	}
+	div img.content{
+		height: 100%;
+		float: none;
+	}
+	.hov{
+		width:100%;
+	}
+	nav{
+		position: relative;
+		height: auto;
+	}
+}
